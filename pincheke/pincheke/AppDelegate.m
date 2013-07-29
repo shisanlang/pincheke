@@ -8,9 +8,10 @@
 
 #import "AppDelegate.h"
 
-#import "FirstViewController.h"
-
-#import "SecondViewController.h"
+#import "HomeViewController.h"
+#import "NearbyViewController.h"
+#import "MessageViewController.h"
+#import "MineViewController.h"
 
 @implementation AppDelegate
 
@@ -25,10 +26,12 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
-    UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
+    UIViewController *viewController1 = [[[HomeViewController alloc] init] autorelease];
+    UIViewController *viewController2 = [[[NearbyViewController alloc] init] autorelease];
+    UIViewController *viewController3 = [[[MessageViewController alloc] init] autorelease];
+    UIViewController *viewController4 = [[[MineViewController alloc] init] autorelease];
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
