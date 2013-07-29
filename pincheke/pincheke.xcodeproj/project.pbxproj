@@ -44,6 +44,7 @@
 		E36669D317A6D91200A3E39C /* viewGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = viewGlobal.h; sourceTree = "<group>"; };
 		E36669D517A6DC6A00A3E39C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		E36669D617A6DC6A00A3E39C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		E36669D917A6E14600A3E39C /* BaseNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationBar.h; sourceTree = "<group>"; };
 		E36E9DAA17A6CBF100AC2DB6 /* pincheke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pincheke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36E9DAD17A6CBF100AC2DB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E36E9DAF17A6CBF100AC2DB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -104,6 +105,7 @@
 			children = (
 				E36669D517A6DC6A00A3E39C /* BaseViewController.h */,
 				E36669D617A6DC6A00A3E39C /* BaseViewController.m */,
+				E36669D917A6E14600A3E39C /* BaseNavigationBar.h */,
 			);
 			path = baseUI;
 			sourceTree = "<group>";

@@ -13,6 +13,8 @@
 #import "MessageViewController.h"
 #import "MineViewController.h"
 
+#import "baseUI/BaseNavigationBar.h"
+
 @implementation AppDelegate
 
 - (void)dealloc
@@ -30,8 +32,16 @@
     UIViewController *viewController2 = [[[NearbyViewController alloc] init] autorelease];
     UIViewController *viewController3 = [[[MessageViewController alloc] init] autorelease];
     UIViewController *viewController4 = [[[MineViewController alloc] init] autorelease];
+    
+    UINavigationController *navViewController1 = [[[UINavigationController alloc] initWithRootViewController:viewController1] autorelease];
+    UINavigationController *navViewController2 = [[[UINavigationController alloc] initWithRootViewController:viewController2] autorelease];
+    UINavigationController *navViewController3 = [[[UINavigationController alloc] initWithRootViewController:viewController3] autorelease];
+    UINavigationController *navViewController4 = [[[UINavigationController alloc] initWithRootViewController:viewController4] autorelease];
+    
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4];
+
+    
+    self.tabBarController.viewControllers = @[navViewController1, navViewController2, navViewController3, navViewController4];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
