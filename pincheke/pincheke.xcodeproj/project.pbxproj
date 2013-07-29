@@ -96,6 +96,7 @@
 		E36E9DB317A6CBF100AC2DB6 /* pincheke */ = {
 			isa = PBXGroup;
 			children = (
+				E36E9DDE17A6CD5E00AC2DB6 /* global */,
 				E36E9DBC17A6CBF100AC2DB6 /* AppDelegate.h */,
 				E36E9DBD17A6CBF100AC2DB6 /* AppDelegate.m */,
 				E36E9DC517A6CBF100AC2DB6 /* FirstViewController.h */,
@@ -125,6 +126,13 @@
 				E36E9DC317A6CBF100AC2DB6 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E36E9DDE17A6CD5E00AC2DB6 /* global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +338,7 @@
 				E36E9DDD17A6CBF100AC2DB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
