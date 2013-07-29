@@ -32,7 +32,6 @@
 		E36E9DAF17A6CBF100AC2DB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E36E9DB117A6CBF100AC2DB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E36E9DB517A6CBF100AC2DB6 /* pincheke-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pincheke-Info.plist"; sourceTree = "<group>"; };
-		E36E9DB717A6CBF100AC2DB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E36E9DB917A6CBF100AC2DB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E36E9DBB17A6CBF100AC2DB6 /* pincheke-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pincheke-Prefix.pch"; sourceTree = "<group>"; };
 		E36E9DBC17A6CBF100AC2DB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,8 +47,9 @@
 		E36E9DCD17A6CBF100AC2DB6 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		E36E9DCF17A6CBF100AC2DB6 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		E36E9DD117A6CBF100AC2DB6 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		E36E9DD417A6CBF100AC2DB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
-		E36E9DD717A6CBF100AC2DB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		E36E9DDF17A6D08400AC2DB6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/FirstViewController.xib"; sourceTree = "<group>"; };
+		E36E9DE017A6D08400AC2DB6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/SecondViewController.xib"; sourceTree = "<group>"; };
+		E36E9DE117A6D08400AC2DB6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +170,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = E36E9DA117A6CBF100AC2DB6;
 			productRefGroup = E36E9DAB17A6CBF100AC2DB6 /* Products */;
@@ -219,7 +220,7 @@
 		E36E9DB617A6CBF100AC2DB6 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E36E9DB717A6CBF100AC2DB6 /* en */,
+				E36E9DE117A6D08400AC2DB6 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -227,7 +228,7 @@
 		E36E9DD317A6CBF100AC2DB6 /* FirstViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E36E9DD417A6CBF100AC2DB6 /* en */,
+				E36E9DDF17A6D08400AC2DB6 /* zh-Hans */,
 			);
 			name = FirstViewController.xib;
 			sourceTree = "<group>";
@@ -235,7 +236,7 @@
 		E36E9DD617A6CBF100AC2DB6 /* SecondViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E36E9DD717A6CBF100AC2DB6 /* en */,
+				E36E9DE017A6D08400AC2DB6 /* zh-Hans */,
 			);
 			name = SecondViewController.xib;
 			sourceTree = "<group>";
@@ -303,6 +304,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pincheke/pincheke-Prefix.pch";
 				INFOPLIST_FILE = "pincheke/pincheke-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -314,6 +316,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pincheke/pincheke-Prefix.pch";
 				INFOPLIST_FILE = "pincheke/pincheke-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
