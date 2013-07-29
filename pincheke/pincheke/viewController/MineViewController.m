@@ -20,6 +20,8 @@
     if (self) {
         // Custom initialization
         self.title = @"我的";
+         self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        
     }
     return self;
 }

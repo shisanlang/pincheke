@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  BaseViewController.h
 //  pincheke
 //
 //  Created by duan on 13-7-30.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface BaseViewController : UIViewController
 
 @end

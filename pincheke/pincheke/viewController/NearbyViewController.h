@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface NearbyViewController : UIViewController
+@interface NearbyViewController : BaseViewController
 
 @end

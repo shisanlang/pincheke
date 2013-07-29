@@ -1,33 +1,34 @@
 //
-//  SecondViewController.m
+//  BaseViewController.m
 //  pincheke
 //
 //  Created by duan on 13-7-30.
 //  Copyright (c) 2013年 duan. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "BaseViewController.h"
+#import "viewGlobal.h"
 
-@interface SecondViewController ()
+@interface BaseViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation BaseViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Second", @"Second");
-        self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        // Custom initialization
     }
     return self;
 }
-							
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	// Do any additional setup after loading the view.
+    self.view.backgroundColor = XD_VIEW_BGCOLOR;
 }
 
 - (void)didReceiveMemoryWarning

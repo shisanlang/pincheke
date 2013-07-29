@@ -20,6 +20,7 @@
     if (self) {
         // Custom initialization
         self.title = @"附近";
+         self.tabBarItem.image = [UIImage imageNamed:@"second"];
     }
     return self;
 }

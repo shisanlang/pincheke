@@ -20,6 +20,7 @@
     if (self) {
         // Custom initialization
         self.title = @"首页";
+         self.tabBarItem.image = [UIImage imageNamed:@"first"];
     }
     return self;
 }
@@ -28,6 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning
