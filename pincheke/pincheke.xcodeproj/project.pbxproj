@@ -140,6 +140,13 @@
 		E3B9609A17E465630008EC06 /* upload02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B9602417E465630008EC06 /* upload02@2x.png */; };
 		E3B9609B17E465630008EC06 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B9602517E465630008EC06 /* user.png */; };
 		E3B9609C17E465630008EC06 /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B9602617E465630008EC06 /* user@2x.png */; };
+		E3B9609F17E472A60008EC06 /* PlacePathCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B9609E17E472A60008EC06 /* PlacePathCell.m */; };
+		E3B960A217E4872E0008EC06 /* PathListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B960A117E4872D0008EC06 /* PathListCell.m */; };
+		E3B960B217E488B20008EC06 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B960A617E488B20008EC06 /* EGOCache.m */; };
+		E3B960B317E488B20008EC06 /* EGOImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B960A917E488B20008EC06 /* EGOImageButton.m */; };
+		E3B960B417E488B20008EC06 /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B960AC17E488B20008EC06 /* EGOImageLoadConnection.m */; };
+		E3B960B517E488B20008EC06 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B960AE17E488B20008EC06 /* EGOImageLoader.m */; };
+		E3B960B617E488B20008EC06 /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B960B117E488B20008EC06 /* EGOImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -289,6 +296,20 @@
 		E3B9602417E465630008EC06 /* upload02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload02@2x.png"; sourceTree = "<group>"; };
 		E3B9602517E465630008EC06 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		E3B9602617E465630008EC06 /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@2x.png"; sourceTree = "<group>"; };
+		E3B9609D17E472A60008EC06 /* PlacePathCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacePathCell.h; sourceTree = "<group>"; };
+		E3B9609E17E472A60008EC06 /* PlacePathCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacePathCell.m; sourceTree = "<group>"; };
+		E3B960A017E4872D0008EC06 /* PathListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathListCell.h; sourceTree = "<group>"; };
+		E3B960A117E4872D0008EC06 /* PathListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathListCell.m; sourceTree = "<group>"; };
+		E3B960A517E488B20008EC06 /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
+		E3B960A617E488B20008EC06 /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
+		E3B960A817E488B20008EC06 /* EGOImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageButton.h; sourceTree = "<group>"; };
+		E3B960A917E488B20008EC06 /* EGOImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageButton.m; sourceTree = "<group>"; };
+		E3B960AB17E488B20008EC06 /* EGOImageLoadConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoadConnection.h; sourceTree = "<group>"; };
+		E3B960AC17E488B20008EC06 /* EGOImageLoadConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoadConnection.m; sourceTree = "<group>"; };
+		E3B960AD17E488B20008EC06 /* EGOImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoader.h; sourceTree = "<group>"; };
+		E3B960AE17E488B20008EC06 /* EGOImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoader.m; sourceTree = "<group>"; };
+		E3B960B017E488B20008EC06 /* EGOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageView.h; sourceTree = "<group>"; };
+		E3B960B117E488B20008EC06 /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -442,6 +463,10 @@
 				E36669CD17A6D54800A3E39C /* MessageViewController.m */,
 				E36669CF17A6D55C00A3E39C /* MineViewController.h */,
 				E36669D017A6D55C00A3E39C /* MineViewController.m */,
+				E3B9609D17E472A60008EC06 /* PlacePathCell.h */,
+				E3B9609E17E472A60008EC06 /* PlacePathCell.m */,
+				E3B960A017E4872D0008EC06 /* PathListCell.h */,
+				E3B960A117E4872D0008EC06 /* PathListCell.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -459,6 +484,7 @@
 		E36669D817A6DFA700A3E39C /* thirdSDK */ = {
 			isa = PBXGroup;
 			children = (
+				E3B960A317E488B20008EC06 /* EGOImage */,
 			);
 			path = thirdSDK;
 			sourceTree = "<group>";
@@ -535,6 +561,55 @@
 				E39DFA7617B152CE008A9E66 /* WelcomeViewController.m */,
 			);
 			path = ModalView;
+			sourceTree = "<group>";
+		};
+		E3B960A317E488B20008EC06 /* EGOImage */ = {
+			isa = PBXGroup;
+			children = (
+				E3B960A417E488B20008EC06 /* EGOCache */,
+				E3B960A717E488B20008EC06 /* EGOImageButton */,
+				E3B960AA17E488B20008EC06 /* EGOImageLoader */,
+				E3B960AF17E488B20008EC06 /* EGOImageView */,
+			);
+			path = EGOImage;
+			sourceTree = "<group>";
+		};
+		E3B960A417E488B20008EC06 /* EGOCache */ = {
+			isa = PBXGroup;
+			children = (
+				E3B960A517E488B20008EC06 /* EGOCache.h */,
+				E3B960A617E488B20008EC06 /* EGOCache.m */,
+			);
+			path = EGOCache;
+			sourceTree = "<group>";
+		};
+		E3B960A717E488B20008EC06 /* EGOImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				E3B960A817E488B20008EC06 /* EGOImageButton.h */,
+				E3B960A917E488B20008EC06 /* EGOImageButton.m */,
+			);
+			path = EGOImageButton;
+			sourceTree = "<group>";
+		};
+		E3B960AA17E488B20008EC06 /* EGOImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				E3B960AB17E488B20008EC06 /* EGOImageLoadConnection.h */,
+				E3B960AC17E488B20008EC06 /* EGOImageLoadConnection.m */,
+				E3B960AD17E488B20008EC06 /* EGOImageLoader.h */,
+				E3B960AE17E488B20008EC06 /* EGOImageLoader.m */,
+			);
+			path = EGOImageLoader;
+			sourceTree = "<group>";
+		};
+		E3B960AF17E488B20008EC06 /* EGOImageView */ = {
+			isa = PBXGroup;
+			children = (
+				E3B960B017E488B20008EC06 /* EGOImageView.h */,
+				E3B960B117E488B20008EC06 /* EGOImageView.m */,
+			);
+			path = EGOImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -729,6 +804,13 @@
 				E36669D117A6D55C00A3E39C /* MineViewController.m in Sources */,
 				E36669D717A6DC6A00A3E39C /* BaseViewController.m in Sources */,
 				E39DFA7717B152CE008A9E66 /* WelcomeViewController.m in Sources */,
+				E3B9609F17E472A60008EC06 /* PlacePathCell.m in Sources */,
+				E3B960A217E4872E0008EC06 /* PathListCell.m in Sources */,
+				E3B960B217E488B20008EC06 /* EGOCache.m in Sources */,
+				E3B960B317E488B20008EC06 /* EGOImageButton.m in Sources */,
+				E3B960B417E488B20008EC06 /* EGOImageLoadConnection.m in Sources */,
+				E3B960B517E488B20008EC06 /* EGOImageLoader.m in Sources */,
+				E3B960B617E488B20008EC06 /* EGOImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

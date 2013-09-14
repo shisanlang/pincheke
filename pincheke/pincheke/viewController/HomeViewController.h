@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface HomeViewController : BaseViewController
+@interface HomeViewController : BaseViewController<UITableViewDelegate, UITableViewDataSource>
+//{
+//    UITableView *ListTableView;
+//    NSMutableArray *SubItemList;
+//}
+
+@property (nonatomic, retain) UITableView *ListTableView;
+@property (nonatomic, retain) NSMutableArray *SubItemList;
 
 @end

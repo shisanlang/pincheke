@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface NearbyViewController : BaseViewController
+@interface NearbyViewController : BaseViewController<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, retain) UITableView *ListTableView;
+@property (nonatomic, retain) NSMutableArray *SubItemList;
 
 @end

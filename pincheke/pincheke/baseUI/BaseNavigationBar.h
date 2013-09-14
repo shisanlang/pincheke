@@ -26,7 +26,7 @@
 + (Class)class {  return NSClassFromString(@"MyNavigationBar");}
 -(void)drawRect:(CGRect)rect
 {
-    UIImage *backImage = [UIImage imageNamed:@"toubu.png"];
+    UIImage *backImage = [UIImage imageNamed:@"top_bg.png"];
     [backImage drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
 }
 

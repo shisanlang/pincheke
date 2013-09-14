@@ -72,12 +72,12 @@
 
 - (void)loginTouchUp:(id)sender
 {
-    
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (void)lookTouchUp:(id)sender
 {
-    
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 

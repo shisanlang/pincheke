@@ -49,54 +49,54 @@
     
     //tabbar
     UIView *BottomButtonView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
-    //    UIImageView *BottomImageView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 49)];
-    //    BottomImageView.image=[UIImage imageNamed:@"TabBarBackground_all.png"];
-    //    [BottomButtonView addSubview:BottomImageView];
-    //    [BottomImageView release];
     
     
-    CGRect frame = CGRectMake(0, 0, 64 ,50);
-	UIImage *BottomButtonBackground  = [UIImage imageNamed:@"shouye.png" ];
-	UIImage *BottomButtonSelected = [UIImage imageNamed:@"shouye_on.png"];
+    CGRect frame = CGRectMake(0, 0, 80 ,50);
+	UIImage *BottomButtonBackground  = [UIImage imageNamed:@"tab_home.png" ];
+	UIImage *BottomButtonSelected = [UIImage imageNamed:@"tab_home_select.png"];
 	TabButton1 = [[UIButton alloc] initWithFrame:frame];
+    TabButton1.tag=0;
 	[TabButton1 setImage:BottomButtonBackground forState:UIControlStateNormal];
 	[TabButton1 setImage:BottomButtonSelected forState:UIControlStateSelected];
 	[TabButton1 setImage:BottomButtonSelected forState:UIControlStateHighlighted];
-	[TabButton1 addTarget:self action:@selector(TabButton1Select) forControlEvents:UIControlEventTouchDown];
+	[TabButton1 addTarget:self action:@selector(TabButtonSelect:) forControlEvents:UIControlEventTouchDown];
 	[BottomButtonView addSubview:TabButton1];
     TabButton1.selected=YES;
     
-    frame = CGRectMake(64, 0, 64 ,50);
-	BottomButtonBackground  = [UIImage imageNamed:@"jingpin.png" ];
-	BottomButtonSelected = [UIImage imageNamed:@"jingpin_on.png"];
+    frame = CGRectMake(80, 0, 80 ,50);
+	BottomButtonBackground  = [UIImage imageNamed:@"tab_square.png" ];
+	BottomButtonSelected = [UIImage imageNamed:@"tab_square_select.png"];
 	TabButton2 = [[UIButton alloc] initWithFrame:frame];
+    TabButton2.tag=1;
 	[TabButton2 setImage:BottomButtonBackground forState:UIControlStateNormal];
 	[TabButton2 setImage:BottomButtonSelected forState:UIControlStateSelected];
 	[TabButton2 setImage:BottomButtonSelected forState:UIControlStateHighlighted];
-	[TabButton2 addTarget:self action:@selector(TabButton2Select) forControlEvents:UIControlEventTouchDown];
+	[TabButton2 addTarget:self action:@selector(TabButtonSelect:) forControlEvents:UIControlEventTouchDown];
 	[BottomButtonView addSubview:TabButton2];
     
-    frame = CGRectMake(128, 0, 64 ,50);
-	BottomButtonBackground  = [UIImage imageNamed:@"shanghu.png" ];
-	BottomButtonSelected = [UIImage imageNamed:@"shanghu_on.png"];
+    frame = CGRectMake(80*2, 0, 80 ,50);
+	BottomButtonBackground  = [UIImage imageNamed:@"tab_message.png" ];
+	BottomButtonSelected = [UIImage imageNamed:@"tab_message_select.png"];
 	TabButton3 = [[UIButton alloc] initWithFrame:frame];
+    TabButton3.tag=2;
 	[TabButton3 setImage:BottomButtonBackground forState:UIControlStateNormal];
 	[TabButton3 setImage:BottomButtonSelected forState:UIControlStateSelected];
 	[TabButton3 setImage:BottomButtonSelected forState:UIControlStateHighlighted];
-	[TabButton3 addTarget:self action:@selector(TabButton3Select) forControlEvents:UIControlEventTouchDown];
+	[TabButton3 addTarget:self action:@selector(TabButtonSelect:) forControlEvents:UIControlEventTouchDown];
 	[BottomButtonView addSubview:TabButton3];
     
-    frame = CGRectMake(192, 0, 64 ,50);
-	BottomButtonBackground  = [UIImage imageNamed:@"wode.png" ];
-	BottomButtonSelected = [UIImage imageNamed:@"wode_on.png"];
+    frame = CGRectMake(80*3, 0, 80 ,50);
+	BottomButtonBackground  = [UIImage imageNamed:@"tab_me.png" ];
+	BottomButtonSelected = [UIImage imageNamed:@"tab_me_select.png"];
 	TabButton4 = [[UIButton alloc] initWithFrame:frame];
+    TabButton4.tag=3;
 	[TabButton4 setImage:BottomButtonBackground forState:UIControlStateNormal];
 	[TabButton4 setImage:BottomButtonSelected forState:UIControlStateSelected];
 	[TabButton4 setImage:BottomButtonSelected forState:UIControlStateHighlighted];
-	[TabButton4 addTarget:self action:@selector(TabButton4Select) forControlEvents:UIControlEventTouchDown];
+	[TabButton4 addTarget:self action:@selector(TabButtonSelect:) forControlEvents:UIControlEventTouchDown];
 	[BottomButtonView addSubview:TabButton4];
     
-    
+    [self.tabBarController.tabBar addSubview:BottomButtonView];
 	[BottomButtonView release];
     
     // show welcome
@@ -146,5 +146,47 @@
 {
 }
 */
+
+//tabbar click
+-(void)TabButtonSelect:(UIButton *)but
+{
+
+    self.tabBarController.selectedIndex = but.tag;
+    
+    switch (but.tag) {
+        case 0:
+            
+            TabButton1.selected = YES;
+            TabButton2.selected = NO;
+            TabButton3.selected = NO;
+            TabButton4.selected = NO;
+            break;
+            
+        case 1:
+            TabButton1.selected = NO;
+            TabButton2.selected = YES;
+            TabButton3.selected = NO;
+            TabButton4.selected = NO;
+            break;
+            
+        case 2:
+            TabButton1.selected = NO;
+            TabButton2.selected = NO;
+            TabButton3.selected = YES;
+            TabButton4.selected = NO;
+            break;
+            
+        case 3:
+            TabButton1.selected = NO;
+            TabButton2.selected = NO;
+            TabButton3.selected = NO;
+            TabButton4.selected = YES;
+            break;
+            
+        default:
+            break;
+    }
+	
+}
 
 @end
