@@ -14,6 +14,7 @@
 #import "MineViewController.h"
 
 #import "baseUI/BaseNavigationBar.h"
+#import "WelcomeViewController.h"
 
 @implementation AppDelegate
 
@@ -43,7 +44,65 @@
     
     self.tabBarController.viewControllers = @[navViewController1, navViewController2, navViewController3, navViewController4];
     self.window.rootViewController = self.tabBarController;
+    
     [self.window makeKeyAndVisible];
+    
+    //tabbar
+    UIView *BottomButtonView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    //    UIImageView *BottomImageView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 49)];
+    //    BottomImageView.image=[UIImage imageNamed:@"TabBarBackground_all.png"];
+    //    [BottomButtonView addSubview:BottomImageView];
+    //    [BottomImageView release];
+    
+    
+    CGRect frame = CGRectMake(0, 0, 64 ,50);
+	UIImage *BottomButtonBackground  = [UIImage imageNamed:@"shouye.png" ];
+	UIImage *BottomButtonSelected = [UIImage imageNamed:@"shouye_on.png"];
+	TabButton1 = [[UIButton alloc] initWithFrame:frame];
+	[TabButton1 setImage:BottomButtonBackground forState:UIControlStateNormal];
+	[TabButton1 setImage:BottomButtonSelected forState:UIControlStateSelected];
+	[TabButton1 setImage:BottomButtonSelected forState:UIControlStateHighlighted];
+	[TabButton1 addTarget:self action:@selector(TabButton1Select) forControlEvents:UIControlEventTouchDown];
+	[BottomButtonView addSubview:TabButton1];
+    TabButton1.selected=YES;
+    
+    frame = CGRectMake(64, 0, 64 ,50);
+	BottomButtonBackground  = [UIImage imageNamed:@"jingpin.png" ];
+	BottomButtonSelected = [UIImage imageNamed:@"jingpin_on.png"];
+	TabButton2 = [[UIButton alloc] initWithFrame:frame];
+	[TabButton2 setImage:BottomButtonBackground forState:UIControlStateNormal];
+	[TabButton2 setImage:BottomButtonSelected forState:UIControlStateSelected];
+	[TabButton2 setImage:BottomButtonSelected forState:UIControlStateHighlighted];
+	[TabButton2 addTarget:self action:@selector(TabButton2Select) forControlEvents:UIControlEventTouchDown];
+	[BottomButtonView addSubview:TabButton2];
+    
+    frame = CGRectMake(128, 0, 64 ,50);
+	BottomButtonBackground  = [UIImage imageNamed:@"shanghu.png" ];
+	BottomButtonSelected = [UIImage imageNamed:@"shanghu_on.png"];
+	TabButton3 = [[UIButton alloc] initWithFrame:frame];
+	[TabButton3 setImage:BottomButtonBackground forState:UIControlStateNormal];
+	[TabButton3 setImage:BottomButtonSelected forState:UIControlStateSelected];
+	[TabButton3 setImage:BottomButtonSelected forState:UIControlStateHighlighted];
+	[TabButton3 addTarget:self action:@selector(TabButton3Select) forControlEvents:UIControlEventTouchDown];
+	[BottomButtonView addSubview:TabButton3];
+    
+    frame = CGRectMake(192, 0, 64 ,50);
+	BottomButtonBackground  = [UIImage imageNamed:@"wode.png" ];
+	BottomButtonSelected = [UIImage imageNamed:@"wode_on.png"];
+	TabButton4 = [[UIButton alloc] initWithFrame:frame];
+	[TabButton4 setImage:BottomButtonBackground forState:UIControlStateNormal];
+	[TabButton4 setImage:BottomButtonSelected forState:UIControlStateSelected];
+	[TabButton4 setImage:BottomButtonSelected forState:UIControlStateHighlighted];
+	[TabButton4 addTarget:self action:@selector(TabButton4Select) forControlEvents:UIControlEventTouchDown];
+	[BottomButtonView addSubview:TabButton4];
+    
+    
+	[BottomButtonView release];
+    
+    // show welcome
+	WelcomeViewController *welcomeVC = [WelcomeViewController sharedViewController];
+	[self.tabBarController  presentModalViewController:welcomeVC animated:NO];
+    
     return YES;
 }
 

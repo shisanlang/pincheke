@@ -23,11 +23,63 @@
     return self;
 }
 
++ (WelcomeViewController *)sharedViewController
+{
+	static WelcomeViewController *sViewController;
+	if (sViewController == nil) {
+		@synchronized(self) {
+			sViewController = [[WelcomeViewController alloc] init];
+			assert(sViewController != nil);
+		}
+	}
+	return sViewController;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    UILabel * titleLabel = [[UILabel alloc]init];
+    titleLabel.frame = CGRectMake(100, 150, 100, 40);
+    titleLabel.text = @"拼车客";
+    [self.view addSubview:titleLabel];
+    [titleLabel release];
+    
+    UIButton * sinaLoginButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    sinaLoginButton.frame = CGRectMake(20, 220, 280, 40);
+    [sinaLoginButton setTitle:@"新浪微博帐号登录" forState:UIControlStateNormal];
+    [sinaLoginButton addTarget:self action:@selector(sinaLoginTouchUp:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:sinaLoginButton];
+    
+    UIButton * loginButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    loginButton.frame = CGRectMake(40, 280, 100, 40);
+    [loginButton setTitle:@"登录" forState:UIControlStateNormal];
+    [loginButton addTarget:self action:@selector(loginTouchUp:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:loginButton];
+    
+    UIButton * lookButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    lookButton.frame = CGRectMake(180, 280, 100, 40);
+    [lookButton setTitle:@"随便看看" forState:UIControlStateNormal];
+    [lookButton addTarget:self action:@selector(lookTouchUp:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:lookButton];
+    
 }
+
+- (void)sinaLoginTouchUp:(id)sender
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+- (void)loginTouchUp:(id)sender
+{
+    
+}
+
+- (void)lookTouchUp:(id)sender
+{
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {

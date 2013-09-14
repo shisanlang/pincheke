@@ -35,6 +35,7 @@
 #define XD_FULLSCREENRECT [[UIScreen mainScreen] applicationFrame] //不包含状态栏 460 (有状态条460,无状态条480)
 
 #define XD_SCREENHEIGHT [[UIScreen mainScreen] applicationFrame].size.height
+#define XD_SCREENWIDTH [[UIScreen mainScreen] applicationFrame].size.width
 
 
 //友盟
