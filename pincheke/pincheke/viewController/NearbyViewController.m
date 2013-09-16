@@ -8,6 +8,7 @@
 
 #import "NearbyViewController.h"
 #import "common.h"
+#import "viewGlobal.h"
 #import "PathListCell.h"
 
 @interface NearbyViewController ()
@@ -40,6 +41,24 @@
     self.ListTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 	[self.view addSubview:self.ListTableView];
     [self.ListTableView release];
+    
+    newButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    newButton.frame = CGRectMake(80, 5, 40, 45);
+    newButton.tag = 0;
+//    [newButton setImage:[UIImage imageNamed:@"btn_add.png"] forState:UIControlStateNormal];
+    [newButton setTitle:@"最新" forState:UIControlStateNormal];
+    [newButton.titleLabel setFont:XD_FONT_14];
+    [newButton addTarget:self action:@selector(Refresh:) forControlEvents:UIControlEventTouchUpInside];
+    [self.navigationController.navigationBar addSubview:newButton];
+    
+    nearbyButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    nearbyButton.frame = CGRectMake(200, 5, 40, 45);
+    nearbyButton.tag = 1;
+//    [nearbyButton setImage:[UIImage imageNamed:@"btn_add.png"] forState:UIControlStateNormal];
+    [nearbyButton setTitle:@"附近" forState:UIControlStateNormal];
+    [nearbyButton.titleLabel setFont:XD_FONT_14];
+    [nearbyButton addTarget:self action:@selector(Refresh:) forControlEvents:UIControlEventTouchUpInside];
+    [self.navigationController.navigationBar addSubview:nearbyButton];
 }
 
 //table
@@ -91,6 +110,12 @@
         ;
     }
 }
+
+#pragma mark - Button
+- (void)Refresh:(UIButton *)button
+{
+}
+
 
 #pragma mark - MemoryWarning
 - (void)didReceiveMemoryWarning

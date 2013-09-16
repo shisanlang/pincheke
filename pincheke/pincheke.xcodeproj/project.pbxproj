@@ -147,6 +147,8 @@
 		E3B960B417E488B20008EC06 /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B960AC17E488B20008EC06 /* EGOImageLoadConnection.m */; };
 		E3B960B517E488B20008EC06 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B960AE17E488B20008EC06 /* EGOImageLoader.m */; };
 		E3B960B617E488B20008EC06 /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B960B117E488B20008EC06 /* EGOImageView.m */; };
+		E3B960BA17E4B4A80008EC06 /* RegUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B960B917E4B4A80008EC06 /* RegUserViewController.m */; };
+		E3B960BD17E4B4BE0008EC06 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B960BC17E4B4BE0008EC06 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -310,6 +312,10 @@
 		E3B960AE17E488B20008EC06 /* EGOImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoader.m; sourceTree = "<group>"; };
 		E3B960B017E488B20008EC06 /* EGOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageView.h; sourceTree = "<group>"; };
 		E3B960B117E488B20008EC06 /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageView.m; sourceTree = "<group>"; };
+		E3B960B817E4B4A80008EC06 /* RegUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegUserViewController.h; sourceTree = "<group>"; };
+		E3B960B917E4B4A80008EC06 /* RegUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegUserViewController.m; sourceTree = "<group>"; };
+		E3B960BB17E4B4BE0008EC06 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E3B960BC17E4B4BE0008EC06 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -454,6 +460,7 @@
 		E36669C117A6D49F00A3E39C /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				E3B960B717E4B4980008EC06 /* User */,
 				E39DFA7417B152B4008A9E66 /* ModalView */,
 				E36669C617A6D4C900A3E39C /* HomeViewController.h */,
 				E36669C717A6D4C900A3E39C /* HomeViewController.m */,
@@ -610,6 +617,17 @@
 				E3B960B117E488B20008EC06 /* EGOImageView.m */,
 			);
 			path = EGOImageView;
+			sourceTree = "<group>";
+		};
+		E3B960B717E4B4980008EC06 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				E3B960B817E4B4A80008EC06 /* RegUserViewController.h */,
+				E3B960B917E4B4A80008EC06 /* RegUserViewController.m */,
+				E3B960BB17E4B4BE0008EC06 /* LoginViewController.h */,
+				E3B960BC17E4B4BE0008EC06 /* LoginViewController.m */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -811,6 +829,8 @@
 				E3B960B417E488B20008EC06 /* EGOImageLoadConnection.m in Sources */,
 				E3B960B517E488B20008EC06 /* EGOImageLoader.m in Sources */,
 				E3B960B617E488B20008EC06 /* EGOImageView.m in Sources */,
+				E3B960BA17E4B4A80008EC06 /* RegUserViewController.m in Sources */,
+				E3B960BD17E4B4BE0008EC06 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "WelcomeViewController.h"
+#import "LoginViewController.h"
 
 @interface WelcomeViewController ()
 
@@ -67,12 +68,15 @@
 
 - (void)sinaLoginTouchUp:(id)sender
 {
-    [self dismissModalViewControllerAnimated:YES];
+//    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (void)loginTouchUp:(id)sender
 {
-    [self dismissModalViewControllerAnimated:YES];
+//    [self dismissModalViewControllerAnimated:YES];
+    LoginViewController  * loginVC = [[LoginViewController alloc]init];
+    [self presentModalViewController:loginVC animated:YES];
+    [loginVC release];
 }
 
 - (void)lookTouchUp:(id)sender

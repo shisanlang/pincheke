@@ -10,6 +10,10 @@
 #import "BaseViewController.h"
 
 @interface NearbyViewController : BaseViewController<UITableViewDelegate, UITableViewDataSource>
+{
+    UIButton * newButton;
+    UIButton * nearbyButton;
+}
 
 @property (nonatomic, retain) UITableView *ListTableView;
 @property (nonatomic, retain) NSMutableArray *SubItemList;

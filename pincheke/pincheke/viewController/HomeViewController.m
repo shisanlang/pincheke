@@ -77,12 +77,12 @@
             cell.selectionStyle = UITableViewCellSeparatorStyleNone;
         }
         
-        UIButton * sinaLoginButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        sinaLoginButton.frame = CGRectMake(10, 20, 301, 45);
-        [sinaLoginButton setImage:[UIImage imageNamed:@"btn_add.png"] forState:UIControlStateNormal];
-        [sinaLoginButton setTitle:@"添加我的路线" forState:UIControlStateNormal];
-        [sinaLoginButton addTarget:self action:@selector(addPathTouchUp) forControlEvents:UIControlEventTouchUpInside];
-        [cell addSubview:sinaLoginButton];
+        UIButton * addMyPathButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        addMyPathButton.frame = CGRectMake(10, 20, 301, 45);
+        [addMyPathButton setImage:[UIImage imageNamed:@"btn_add.png"] forState:UIControlStateNormal];
+        [addMyPathButton setTitle:@"添加我的路线" forState:UIControlStateNormal];
+        [addMyPathButton addTarget:self action:@selector(addPathTouchUp) forControlEvents:UIControlEventTouchUpInside];
+        [cell addSubview:addMyPathButton];
         
         return cell;
         

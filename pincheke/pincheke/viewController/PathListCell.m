@@ -68,6 +68,11 @@
         [self addSubview:distanceLabel];
         [distanceLabel release];
         
+        UIImageView * carImageView = [[UIImageView alloc]initWithFrame:CGRectMake(95, 60, 40, 15)];
+        carImageView.image = [UIImage imageNamed:@"model_bg.png"];
+        [self addSubview:carImageView];
+        [carImageView release];
+        
         carLabel = [[UILabel alloc]initWithFrame:CGRectMake(95, 60, 40, 15)];
         carLabel.text = @"马自达6";
         carLabel.font = XD_FONT_10;
