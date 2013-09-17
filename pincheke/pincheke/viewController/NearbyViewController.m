@@ -43,20 +43,23 @@
     [self.ListTableView release];
     
     newButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    newButton.frame = CGRectMake(80, 5, 40, 45);
+    newButton.frame = CGRectMake(26, 6, 109, 32);
     newButton.tag = 0;
-//    [newButton setImage:[UIImage imageNamed:@"btn_add.png"] forState:UIControlStateNormal];
-    [newButton setTitle:@"最新" forState:UIControlStateNormal];
-    [newButton.titleLabel setFont:XD_FONT_14];
+    newButton.selected = YES;
+    [newButton setImage:[UIImage imageNamed:@"new.png"] forState:UIControlStateNormal];
+    [newButton setImage:[UIImage imageNamed:@"new_select.png"] forState:UIControlStateSelected];
+//    [newButton setTitle:@"最新" forState:UIControlStateNormal];
+//    [newButton.titleLabel setFont:XD_FONT_14];
     [newButton addTarget:self action:@selector(Refresh:) forControlEvents:UIControlEventTouchUpInside];
     [self.navigationController.navigationBar addSubview:newButton];
     
     nearbyButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    nearbyButton.frame = CGRectMake(200, 5, 40, 45);
+    nearbyButton.frame = CGRectMake(181, 6, 109, 32);
     nearbyButton.tag = 1;
-//    [nearbyButton setImage:[UIImage imageNamed:@"btn_add.png"] forState:UIControlStateNormal];
-    [nearbyButton setTitle:@"附近" forState:UIControlStateNormal];
-    [nearbyButton.titleLabel setFont:XD_FONT_14];
+    [nearbyButton setImage:[UIImage imageNamed:@"near.png"] forState:UIControlStateNormal];
+    [nearbyButton setImage:[UIImage imageNamed:@"near_select.png"] forState:UIControlStateSelected];
+//    [nearbyButton setTitle:@"附近" forState:UIControlStateNormal];
+//    [nearbyButton.titleLabel setFont:XD_FONT_14];
     [nearbyButton addTarget:self action:@selector(Refresh:) forControlEvents:UIControlEventTouchUpInside];
     [self.navigationController.navigationBar addSubview:nearbyButton];
 }
@@ -114,6 +117,13 @@
 #pragma mark - Button
 - (void)Refresh:(UIButton *)button
 {
+    newButton.selected = NO;
+    nearbyButton.selected = NO;
+    if (button.tag == 0) {
+        newButton.selected = YES;
+    } else {
+        nearbyButton.selected = YES;
+    }
 }
 
 
